@@ -8,17 +8,40 @@
 
 /* Header -- top of my page */
 
-body {
-  background-color: #E4E3E6ff;
-  font-family: 'Signika Negative', sans-serif;
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #3B4645ff;
+}
+.thyca-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  /* padding-left: 50px; */
+  /* margin: 20px 0; */
+  margin-left: 20px;
+  /* color: #ffffff; */
+  background-color: #3B4645ff;
+}
+
+.buttonimage{
+  width: 225px;
+  height:50px;
+  border-radius: 8px;
 }
 
 nav ul {
+  display: flex;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3B4645ff;
 }
 
 nav li {
