@@ -7,7 +7,6 @@
 */
 
 /* Header -- top of my page */
-
 nav{
   display: flex;
   justify-content: space-between;
@@ -30,8 +29,8 @@ nav{
 }
 
 .buttonimage{
-  width: 225px;
-  height:50px;
+  width: 150px;
+  /* height:50px; */
   border-radius: 8px;
 }
 
@@ -56,6 +55,7 @@ nav li a {
   text-decoration: none;
 }
 
+
 /* Change the link color to #111 (black) on hover
 nav li a:hover {
   background-color:rgba(59, 70, 69, 0.695);
@@ -65,9 +65,36 @@ a:hover {
   color: rgb(193, 191, 191);
 }
 
-img{
-    object-fit: cover;
+
+body {
+  background-color: #DDD9D8ff;
+  font-family: 'Signika Negative', sans-serif;
 }
+
+/*Name in right flex box*/
+h1 {
+  font-size: 2em;
+  letter-spacing: .1em;
+  margin: 0;
+  
+  }
+
+/*right flex box - 'MBA...'*/
+h2 {
+  font-size: 1em;
+  margin: 4px;
+  
+}
+
+h3 {
+  font-size: 1em;
+  margin: 0px;
+}
+
+p {
+  line-height: 1em;
+}
+
 
 main{
   /* display: flex;
