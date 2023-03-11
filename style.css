@@ -1,0 +1,236 @@
+/* CSS HEX Colors
+--battleship-gray: #939A97ff;
+--platinum: #E4E3E6ff;
+--outer-space: #3B4645ff;
+--timberwolf: #DDD9D8ff;
+--reseda-green: #6B7D71ff;
+*/
+
+/* Header -- top of my page */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3B4645ff;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover
+nav li a:hover {
+  background-color:rgba(59, 70, 69, 0.695);
+}
+ */
+a:hover {
+  color: rgb(193, 191, 191);
+}
+
+
+body {
+  background-color: #DDD9D8ff;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+/*Name in right flex box*/
+h1 {
+  font-size: 3em;
+  letter-spacing: .1em;
+  margin: 0;
+  
+  }
+
+/*right flex box - 'MBA...'*/
+h2 {
+  font-size: 1em;
+  margin: 4px;
+  
+}
+
+h3 {
+  font-size: 1em;
+  margin: 0px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: 75vh;
+    background-color: #DDD9D8ff;
+}
+
+/*left flex box*/
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+}
+
+/*picture in the left flex box*/
+#moms-image {
+    /* max-width: 100%; */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*right flex box*/
+#aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 170px 115px 50px 115px;
+    /*change first number in padding to adjust the vertical alignment*/
+}
+
+/* .sidebar-accent {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #333;
+  width: 85%;
+}
+
+
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 85%;
+  border-bottom: 4px solid black;
+} */
+
+
+.sidebar-btn {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6B7D71ff;
+    width: 125px;
+    height: 60px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 20px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+a:link {
+  color: rgb(251, 252, 251);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(255, 255, 255, 0.726);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(158, 165, 162);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(204, 212, 208);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.sidebar-btn i {
+    color: #ffffff;
+}
+
+/*Contact Me Form*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(90, 106, 95);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(58, 68, 62);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color:#DDD9D8ff;
+  padding: 20px;
+}
+
+/*Skills & Certifications*/
+#skillsandcerts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 170px 50px 50px 10px;
+  font-size: large;
+}
+
+/*change first number in padding to adjust the vertical alignment*/
+
+
+
+/* Footer - bottom of my page */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 40px solid #3B4645ff;
+}
+
+
+.square {
+    margin-right: 10px;
+    color: #333;
+    font-size: 32px;
+}
+
+
+.icons-flex {
+    display: flex;
+}
+

@@ -1,0 +1,177 @@
+/* CSS HEX Colors
+--battleship-gray: #939A97ff;
+--platinum: #E4E3E6ff;
+--outer-space: #3B4645ff;
+--timberwolf: #DDD9D8ff;
+--reseda-green: #6B7D71ff;
+*/
+
+/* Header -- top of my page */
+
+body {
+  background-color: #E4E3E6ff;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3B4645ff;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover
+nav li a:hover {
+  background-color:rgba(59, 70, 69, 0.695);
+}
+ */
+a:hover {
+  color: rgb(193, 191, 191);
+}
+
+img{
+    object-fit: cover;
+}
+
+main{
+  /* display: flex;
+  flex-direction: row; */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  min-width: none;
+  background-color: #DDD9D8ff;
+}
+
+/*left flex box*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/*picture in the left flex box*/
+#moms-image {
+  /* max-width: 100%; */
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+  object-fit: cover;
+  position:relative;
+  /* Padding-left:20px; */
+  padding-top:20px;
+  /* padding-right:20px; */
+  /* padding bottom:10px; */
+  /* border-radius: 50%; */
+}
+
+.cardContainer{
+    /* width:fit-content; */
+    justify-content:space-around;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+.topRow{
+  display: flex;
+  background-color:#DDD9D8ff;
+  max-width: 100%;
+  /* Width:fit-content; */
+  justify-content:space-around;
+  margin:auto;  
+  margin-top: 40px;
+  /* margin-right:500px; */
+  margin-bottom:40px;
+  /* margin-left:500px; */
+}
+.bottomrow{
+  display: flex;
+  background-color: #DDD9D8ff;
+  width:fit-content;
+  justify-content: space-around;
+  margin: auto;
+  padding-bottom: 20px;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    border: 5px solid #DDD9D8ff;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #939A97ff;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/* Footer - bottom of my page */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 40px solid #3B4645ff;
+}
+
+
+.square {
+  margin-right: 10px;
+  color: #333;
+  font-size: 32px;
+}
+
+
+.icons-flex {
+  display: flex;
+}
